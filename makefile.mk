@@ -1,0 +1,16 @@
+DO_LOGGING          := 1
+WUT_ENABLE_NEWLIB   := 0
+WUT_ENABLE_CPP      := 0
+WUT_DEFAULT_MALLOC  := 1
+TARGET              := darku.mod
+SOURCES             := src/
+DATA                :=	
+INCLUDES            := src
+COMMON_CFLAGS       := 
+CFLAGS              :=
+CXXFLAGS            :=
+LDFLAGS             := 
+LIBDIRS             := $(WUPSDIR) $(WUT_ROOT) $(CURDIR)/libs
+LIBS                := -lwups -lutilswut -lcoreinit -lnsysnet
+EXTERNAL_LIBPATHS   := 
+EXTERNAL_INCLUDE    := -I$(WUT_ROOT)/include/libutilswut
